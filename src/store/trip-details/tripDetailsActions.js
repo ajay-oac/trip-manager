@@ -1,0 +1,1 @@
+export const LOAD_TRIP_DETAILS = "LOAD_TRIP_DETAILS";

@@ -1,0 +1,49 @@
+.trip-details-container {
+  padding: 48px;
+  background-color: whitesmoke;
+}
+
+.middle-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0px;
+}
+
+.cards {
+  flex-basis: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards .card-container {
+  flex-basis: 30%;
+}
+
+.other-expenses-container {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.other-expenses {
+  flex-basis: 75%;
+}
+
+.margin-bottom {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 675px) {
+  .trip-details-container {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 450px) {
+  .trip-details-container {
+    padding: 24px;
+  }
+}

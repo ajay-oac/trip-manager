@@ -1,0 +1,135 @@
+.trip-table {
+  margin: 8px 0px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.trip-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #19274c;
+  color: white;
+  font-weight: 300;
+}
+
+.header-details {
+  flex-basis: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.total-kms {
+  color: #06dfda;
+}
+
+.total-exp {
+  color: #5fa143;
+}
+
+.header-button {
+  cursor: pointer;
+}
+
+.margin-right {
+  margin-right: 8px;
+}
+
+.trip-table-content {
+  padding: 8px 16px;
+  box-sizing: border-box;
+  background-color: white;
+  overflow-x: auto;
+}
+
+.trip-table-content::-webkit-scrollbar {
+  height: 10px;
+}
+
+.trip-table-content::-webkit-scrollbar-track {
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.trip-table-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(25, 39, 76, 0.43);
+}
+
+.trip-table-content table {
+  padding: 0px;
+  margin: 0px;
+  min-width: 1240px;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 4px;
+  border: 1px solid #e4e7e9;
+}
+
+.trip-table-content table tbody tr {
+  border-bottom: 1px solid #e4e7e9;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2f2f2f;
+}
+
+.trip-table-content table tr td,
+.trip-table-content table tr th {
+  padding: 8px;
+}
+
+.trip-table-content table tr td:not(:last-child) {
+  border-right: 1px solid #e4e7e9;
+}
+
+.trip-table-content table tr th:not(:last-child) {
+  border-right: 1px solid White;
+}
+
+.trip-table-content table tr:nth-child(1n) {
+  background-color: #f5f5f5;
+}
+
+.trip-table-content table tr:nth-child(2n) {
+  background-color: #f0f7fd;
+}
+
+.trip-table-content table thead tr:first-child {
+  background-color: #00bddc;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.trip-table-content table tr td:last-child {
+  display: flex;
+  justify-content: space-around;
+}
+
+.action-button {
+  padding: 8px 16px;
+  background: #37c4c9;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width: 1105px) {
+  .header-details > span:last-child {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 395px) {
+  .total-exp {
+    margin-top: 8px;
+  }
+}
